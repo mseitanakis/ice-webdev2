@@ -10,13 +10,13 @@ export default function Recipe(props) {
         setLikes(oLikes => oLikes + 1)
     }
 
-    useEffect(() => {
-        console.log(Stopwatch.get(), `Recipe component has mounted for ${props.name ?? "anonymous"} recipe!`)
+    // useEffect(() => {
+    //     console.log(Stopwatch.get(), `Recipe component has mounted for ${props.name ?? "anonymous"} recipe!`)
 
-        return () => {
-            console.log(Stopwatch.get(), `Recipe component has unmounted for ${props.name ?? "anonymous"} recipe!`)
-        }
-    }, []);
+    //     return () => {
+    //         console.log(Stopwatch.get(), `Recipe component has unmounted for ${props.name ?? "anonymous"} recipe!`)
+    //     }
+    // }, []);
 
     // useEffect(() => {
     //     console.log(Stopwatch.get(), `The number of likes has changed for ${props.name ?? "anonymous"} recipe!`)
